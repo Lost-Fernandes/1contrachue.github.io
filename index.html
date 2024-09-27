@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Contracheque</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="contracheque">
+        <h1>CONTRACHEQUE</h1>
+        <div class="input-section">
+            <label for="empresa">Empresa:</label>
+            <input type="text" id="empresa" placeholder="Nome da Empresa">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" placeholder="00.000.000/0001-00">
+            <label for="folha">Folha Mensal:</label>
+            <input type="text" id="folha" placeholder="Mês/Ano">
+            <label for="codigo">Código:</label>
+            <input type="text" id="codigo" placeholder="12345">
+            <label for="nome">Nome do Funcionário:</label>
+            <input type="text" id="nome" placeholder="Nome do Funcionário">
+            <label for="descricao">Descrição:</label>
+            <input type="text" id="descricao" placeholder="Descrição do Trabalho">
+            <label for="referencia">Referência:</label>
+            <input type="text" id="referencia" placeholder="Mês/Ano">
+            <label for="salarioBase">Salário Base:</label>
+            <input type="text" id="salarioBase" placeholder="R$ 2.000,00">
+            <label for="horasExtras">Horas Extras:</label>
+            <input type="text" id="horasExtras" placeholder="R$ 300,00">
+            <label for="inss">INSS:</label>
+            <input type="text" id="inss" placeholder="R$ 150,00">
+            <label for="irrf">IRRF:</label>
+            <input type="text" id="irrf" placeholder="R$ 100,00">
+            <button id="gerarPdf">Gerar PDF</button>
+        </div>
+        <div class="output-section" style="display:none;">
+            <h2>Resumo do Contracheque</h2>
+            <p id="output"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
